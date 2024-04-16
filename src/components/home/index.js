@@ -1,8 +1,11 @@
+import { useState } from "react";
 import MovieCard from "../../common/movieCard";
 import "./style.css";
 
 function Home() {
-  const favMovies = window.localStorage.getItem("favMovies");
+  const movies = JSON.parse(window.localStorage.getItem("favMovies"))
+
+  const [favMovies,setFavMovies] = useState(movies?.length?movies:[]) ;
   console.log(favMovies);
   return (
     <div className="container">
@@ -10,7 +13,7 @@ function Home() {
 
       <div className="container">
         <div className="row row-cols-4">
-          {[].map((item, index) => (
+          {favMovies.map((item, index) => (
             <MovieCard key={index} movie={item} />
           ))}
         </div>
