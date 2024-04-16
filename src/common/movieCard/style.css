@@ -1,0 +1,48 @@
+.card-img-top {
+  height: 400px;
+  transition: transform 0.5s ease;
+}
+.card:hover .card-img-top {
+  /* height: 500px; */
+  transform: scale(1.05);
+}
+
+.addIcon {
+  position: absolute;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.removeIcon {
+  position: absolute;
+  color: red;
+  bottom: 1px;
+  right: 1px;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0%;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .removeIcon {
+  opacity: 100%;
+}
+
+.movieTitle {
+  color: white;
+  height: 50px;
+  font-weight: bold;
+}
+.card-body {
+  position: absolute;
+  bottom: 1px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0%;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .card-body {
+  opacity: 100%;
+}

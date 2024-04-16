@@ -1,0 +1,17 @@
+.navbar {
+  margin: 20px 10px;
+}
+
+.paggination {
+  display: flex;
+  justify-content: end;
+  padding: 6px;
+}
+.arrowBackIosIcon {
+  margin: 0px 3px;
+  cursor: pointer;
+}
+.arrowForwardIosIcon {
+  margin: 0px 3px;
+  cursor: pointer;
+}
